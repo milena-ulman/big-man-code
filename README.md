@@ -2,4 +2,4 @@
 
 ### About
 
-Knowledge library for thr front-end code
+Knowledge library for the front-end code
