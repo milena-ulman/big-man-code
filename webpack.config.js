@@ -10,13 +10,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
     watchContentBase: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Big Man Code',
-      filename: 'dist/index.html',
+      filename: 'public/index.html',
     }),
   ],
 };
