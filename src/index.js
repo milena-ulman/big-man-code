@@ -1,11 +1,10 @@
-import _ from "lodash";
+function createHelloWorldElement() {
+  const element = document.createElement('h1');
+  element.className = 'title';
 
-function component() {
-  const element = document.createElement("div");
-
-  element.innerHTML = _.join(["Hello", "webpack 123"], " ");
+  element.innerHTML = 'Hello World!';
 
   return element;
 }
 
-document.body.appendChild(component());
+document.body.appendChild(createHelloWorldElement());
