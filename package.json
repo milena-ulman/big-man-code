@@ -1,0 +1,13 @@
+{
+  "name": "big-man-code",
+  "version": "0.0.1",
+  "description": "Knowledge library for the FE code",
+  "main": "index.js",
+  "repository": "https://github.com/milena-ulman/big-man-code.git",
+  "author": "Milena Ulman <milenadev94@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.31.0"
+  }
+}
