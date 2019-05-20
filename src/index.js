@@ -7,4 +7,4 @@ function createHelloWorldElement() {
   return element;
 }
 
-document.body.appendChild(createHelloWorldElement());
+// document.body.appendChild(createHelloWorldElement());
