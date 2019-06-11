@@ -21,45 +21,55 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>Big Man Code</title>
   </head>
   <body>
-    <div class="layout">
-      <header class="layout__topbar">Topbar</header>
-      <div class="layout__content">
-        <nav class="layout__sidebar">
-          <div class="button-dropdown">
-            <div><span class="language-selector">Javascript</span></div>
-            <div><i class="icon_down fas fa-angle-down"></i></div>
-          </div>
+    <!-- TopBar navigation menu-->
+    <nav>
+      <a href="#"
+        ><i class="material-icons menu-button" id="bmc_sidebar-menu">menu</i></a
+      >
+    </nav>
 
-          <div class="toc">
-            <div class="toc__section">
-              <h3 class="section__title" id="bmc_variables">Variables</h3>
-              <a href="#"><h5 class="section__item">Types</h5></a>
-              <a href="#"><h5 class="section__item">Casting</h5></a>
-            </div>
-            <div class="toc__section">
-              <h3 class="section__title">Title</h3>
-              <a href="#"><h5 class="section__item">Item</h5></a>
-              <a href="#"><h5 class="section__item">Item</h5></a>
-            </div>
-            <div class="toc__section">
-              <h3 class="section__title">Title</h3>
-              <a href="#"><h5 class="section__item">Item</h5></a>
-              <a href="#"><h5 class="section__item">Item</h5></a>
-            </div>
+    <!-- Sidebar with content inside-->
+    <ul id="slide-out" class="sidenav">
+      <li><a id="bmc_to-do-list" class="header">To-do List</a></li>
+      <li><a class="subheader" href="#!">1. State management</a></li>
+      <li><a class="subheader" href="#!">2. Add to-do item</a></li>
+    </ul>
+
+    <!-- Div with special id to include content dynamically via JavaScript -->
+    <div class="container">
+      <div class="row">
+        <h2 class="center-align">To-do List</h2>
+        <form class="col s12 valign-wrapper">
+          <div class="input-field col s10">
+            <input
+              placeholder="Type something..."
+              id="bmc_to-do-input"
+              type="text"
+            />
           </div>
-        </nav>
-        <main class="layout__main" id="bmc_include-content">
-          <div class="main-text">
-            <h3>Knowledge library</h3>
-            <h3>for the code and all the</h3>
-            <h3>fun stuff <i class="far fa-smile"></i></h3>
+          <div class="col s2">
+            <a class="btn-floating disabled" id="bmc_add-button"
+              ><i class="material-icons">add</i></a
+            >
           </div>
-        </main>
+        </form>
       </div>
-      <footer class="layout__footer">Footer</footer>
     </div>
 
     <script type="text/javascript" src="./bundle.js"></script>
