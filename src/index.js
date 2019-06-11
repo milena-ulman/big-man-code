@@ -1,21 +1,21 @@
-const SIDENAV = '.sidenav';
+const SIDENAV_MATERIALIZE = '.sidenav';
 const SIDEBAR_MENU = '#bmc_sidebar-menu';
 const TODO_INPUT = '#bmc_to-do-input';
 const ADD_BUTTON = '#bmc_add-button';
 
-const OPEN_NAV = 'open';
+const OPEN_NAV_METHOD_MATERIALIZE = 'open';
 
 const EVENTS_TO_LISTEN = 'change paste keyup';
 const DISABLED_CLASS = 'disabled';
 
 // Initialize sidenav from materialize
 $(document).ready(function() {
-  $(SIDENAV).sidenav();
+  $(SIDENAV_MATERIALIZE).sidenav();
 });
 
 // Listen for "menu" text and if user clicks it open sidenav (closed by default)
 $(SIDEBAR_MENU).click(function() {
-  $(SIDENAV).sidenav(OPEN_NAV);
+  $(SIDENAV_MATERIALIZE).sidenav(OPEN_NAV_METHOD_MATERIALIZE);
 });
 
 /**
